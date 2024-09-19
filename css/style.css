@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'TT Hoves', sans-serif;
+    color:#222;
+}
+
+section {
+    padding: 0 calc(24px + (121 - 24) * ((100vw - 375px) / (1280 - 375)));
+}
+
+section.hello {
+    padding-top: 40px;
+    background-image: url('../img/html_css_js.png');
+    background-repeat: no-repeat;
+    background-position: top calc(77px + (121 - 77) * ((100vw - 375px) / (1280 - 375))) left calc(193px + (827 - 193) * ((100vw - 375px) / (1280 - 375)));
+    background-size: calc(179px + (395 - 179) * ((100vw - 375px) / (1280 - 375)));    
+}
+
+.logo {
+    height: calc(30px + (41 - 30) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.courseInfo {
+    display: flex;
+    gap: 30px 160px;
+    flex-wrap: wrap;
+    margin-top: calc(28px + (85 - 28) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(48px + (76 - 48) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.courseData {
+    font-size: 21px;
+    line-height: 140%;
+}
+
+.courseData .value{
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Chava', sans-serif;
+    font-size: calc(42px + (80 - 42) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 100%;
+}
+
+p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 300;
+    line-height: 140%;
+    width: calc(328px + (930 - 328) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.cta {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;    
+}
+
+button {
+    width: 328px;
+    padding: 20px 0px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 117%;
+}
+
+button.purple {
+    background: #6e3aba;
+    color: white;
+    border: 1px solid #6e3aba;
+}
+
+button.white {
+    background: white;
+    color: #6e3aba;
+    border: 1px solid #6e3aba;
+}
+
+
+
+
+section.page2 {
+    padding-top: calc(60px + (160 - 60) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h2 {    
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;    
+}
+
+.infoAbout {    
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));    
+}
+
+.speciality {
+    width: 450px;
+    height: calc(350px + (510 - 350) * ((100vw - 375px) / (1280 - 375)));
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+    margin-right:auto
+}
+
+.picture {
+    height: calc(180px + (210 - 180) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.specialityName {    
+    font-weight: 600;
+}
+
+.specialityInfo {    
+    font-weight: 400;
+    margin-top: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));  
+}
