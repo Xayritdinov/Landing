@@ -92,7 +92,8 @@ section.page2 {
 
 h2 {    
     font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
-    font-weight: 500;    
+    font-weight: 500;
+    width: calc(328px + (700 - 328) * ((100vw - 375px) / (1280 - 375)));    
 }
 
 .infoAbout {    
