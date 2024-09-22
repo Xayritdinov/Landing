@@ -95,8 +95,7 @@ section.page2 {
       
 }
 .speciality {
-    width: 450px;
-    height: calc(350px + (510 - 350) * ((100vw - 375px) / (1280 - 375)));
+    width: calc(13.5vw + 277.4px);    
     font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
     line-height: 140%;
     margin-right:auto
