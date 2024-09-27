@@ -301,6 +301,9 @@ h4 {
 
 
 /***** page 9 *****/
+.page9 h2 {
+    margin-bottom: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
 .studentBox {
     display: flex;
     flex-wrap: wrap;    
