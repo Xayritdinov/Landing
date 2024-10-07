@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./font/stylesheet.css">
     <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
 
 </head>
 
@@ -310,13 +312,40 @@
     <section class="party">
         <h2>Все еще сомневаешься?</h2>
         <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
-        <div class="partyPhoto">
-            <img src="./img/slider_image_01.png" alt="photo 1">
-            <img src="./img/slider_image_02.png" alt="photo 2">
-            <img src="./img/slider_image_03.png" alt="photo 3">
-            <img src="./img/slider_image_04.png" alt="photo 4">
-            <img src="./img/slider_image_05.png" alt="photo 5">
+        
+            <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./img/slider_image_01.png" alt="photo 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_02.png" alt="photo 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_03.png" alt="photo 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_04.png" alt="photo 4">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/slider_image_05.png" alt="photo 5">
+            </div>
+            ...
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
     </section>
 
 
@@ -385,5 +414,28 @@
 
   
     <script src="./js/script.js"></script>
+    
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {        
+            loop: true,
+            autoplay: {
+                delay:5000,
+            },
+            breakpoints: {
+                320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+                },
+                850: {
+                    slidesPerView: 3,
+                    spaceBetween: 25            
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+    </script>
 </body>
 </html>

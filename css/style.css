@@ -430,13 +430,14 @@ h4 {
     line-height: 150%;    
     font-weight: 400;
 }
-.partyPhoto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 26px;
-}
-.partyPhoto img {
-    width: calc(328px + (506 - 328) * ((100vw - 375px) / (1280 - 375)));
+.swiper {
+    
+    height: calc(328px + (400 - 328) * ((100vw - 375px) / (1280 - 375)));
+  }
+.swiper img {
+    width: 100%;
+    height: 100%;
+    /* width: calc(328px + (506 - 328) * ((100vw - 375px) / (1280 - 375))); */
 }
 
 
